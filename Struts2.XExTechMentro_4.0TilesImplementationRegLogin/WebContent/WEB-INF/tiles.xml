@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN" "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+	<definition name="base" template="/techmentro_struts2_tiles_layout.jsp">
+		<put-attribute name="title" value="Tiles Implementation at Techmentro"/>
+		<put-attribute name="header" value="/header.jsp"/>
+		<put-attribute name="footer" value="/footer.jsp"/>
+	</definition>
+	<definition name="home" extends="base">
+		<put-attribute name="content" value="/userHome.jsp"/>
+	</definition>
+	<definition name="userHome" extends="base">
+		<put-attribute name="content" value="/relogin.jsp"/>
+	</definition>
+	<definition name="loginNotValidated" extends="base">
+		<put-attribute name="content" value="/login.jsp"/>
+	</definition>
+	<definition name="loginPage" extends="base">
+		<put-attribute name="content" value="/login.jsp"/>
+	</definition>
+</tiles-definitions>

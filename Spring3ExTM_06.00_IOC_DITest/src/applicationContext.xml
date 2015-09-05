@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="
+            http://www.springframework.org/schema/beans     
+            http://www.springframework.org/schema/beans/spring-beans.xsd
+            http://www.springframework.org/schema/tx 
+            http://www.springframework.org/schema/tx/spring-tx.xsd
+            http://www.springframework.org/schema/context 
+            http://www.springframework.org/schema/context/spring-context.xsd">
+	<!-- CONSTRUCTOR INJECTION CONFIGURATION -->
+	<bean id="b1" class="org.techmentro.training.spring.beanpack.Batch">
+		<constructor-arg value="9 to 11:30"/>
+		<constructor-arg value="Hibernate"/>
+		<constructor-arg value="W/E"/>
+	</bean>
+	<bean id="b2" class="org.techmentro.training.spring.beanpack.Batch">
+		<constructor-arg value="2 to 5:30"/>
+		<constructor-arg value="Struts"/>
+		<constructor-arg value="W/E"/>
+	</bean>
+	<bean id="tr" class="org.techmentro.training.spring.beanpack.Trainer">
+		<constructor-arg value="Amit"/>
+		<constructor-arg>
+			<set>
+				<ref bean="b1"/>
+				<ref bean="b2"/>
+			</set>
+		</constructor-arg>
+	</bean>
+	<!-- SETTER INJECTION CONFIGURATION -->
+	<!-- 
+	<bean id="b1" class="org.techmentro.training.spring.beanpack.Batch">
+		<property name="slot" value="9 to 11:30"/>
+		<property name="topic" value="Hibernate"/>
+		<property name="mode" value="W/E"/>
+	</bean>
+	<bean id="b2" class="org.techmentro.training.spring.beanpack.Batch">
+		<property name="slot" value="2 to 5:30"/>
+		<property name="topic" value="Struts"/>
+		<property name="mode" value="W/E"/>
+	</bean>
+	<bean id="tr" class="org.techmentro.training.spring.beanpack.Trainer">
+		<property name="name" value="Amit"/>
+		<property name="batches">
+			<set>
+				<ref bean="b1"/>
+				<ref bean="b2"/>
+			</set>
+		</property>
+	</bean> 
+	-->
+	<bean id="tic" class="org.techmentro.training.spring.beanpack.Ticket" scope="prototype"/>
+	<!-- <bean id="c" class="org.techmentro.training.spring.beanpack.DishonestConductor">
+	<property name="ticket" ref="tic"/>
+	</bean> -->
+	<!-- <bean id= "c" class="org.techmentro.training.spring.beanpack.HonestConductor"/> -->
+	<bean id="c" class="org.techmentro.training.spring.beanpack.Conductor"> 
+	<lookup-method name="getTicket" bean="tic"/>
+	</bean>
+	</beans>

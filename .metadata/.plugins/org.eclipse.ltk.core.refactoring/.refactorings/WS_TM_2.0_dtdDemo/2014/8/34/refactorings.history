@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;emp1.dtd&apos; to &apos;WS_TM_3.0_XMLParsersWithDTD/src&apos;&#x0D;&#x0A;- Original project: &apos;WS_TM_2.0_dtdDemo&apos;&#x0D;&#x0A;- Destination element: &apos;WS_TM_3.0_XMLParsersWithDTD/src&apos;&#x0D;&#x0A;- Original element: &apos;emp1.dtd&apos;" description="Copy file" destination="=WS_TM_3.0_XMLParsersWithDTD/src" element1="src/emp1.dtd" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1408806274089" units="0" version="1.0"/>
+</session>

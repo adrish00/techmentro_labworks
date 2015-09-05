@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="org.techmentro.training.hibernate.pojo.Batch" table="batchess">
+		<id name = "id" column="batchId" type="int">
+			<generator class="identity"/>
+		</id>
+		<property name="slot"/>	
+		<property name="topic"/>	
+		<many-to-one name="trainer" class="org.techmentro.training.hibernate.pojo.Trainer"
+					column="trainerId" cascade="save-update" />
+	</class>
+	<class name="org.techmentro.training.hibernate.pojo.Trainer" table="trainers">
+		<id name = "id" type="int">
+			<generator class="increment"/>
+		</id>
+		<property name="name"/>	
+		<set name="batches" table="batchess" inverse="true">
+			<key column="trainerId" />
+			<one-to-many class="org.techmentro.training.hibernate.pojo.Batch"/>
+		</set>
+	</class>
+</hibernate-mapping>

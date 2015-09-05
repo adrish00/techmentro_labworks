@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="org.techmentro.training.hibernate.pojo.Person">
+		<!-- In case the database table name and POJO name not 
+			same use attribute table to map DB-Table -->
+		<id name = "id" type="int">
+			<generator class="increment"/>
+		</id>
+		<property name = "name"/> 
+		<joined-subclass name="org.techmentro.training.hibernate.pojo.Emp"
+		 table= "employees">
+			<!-- In case field name @ class and database-table
+				 is not same use attribute column -->
+			<key column="personId"/>
+			<property name = "job"/>
+			<property name = "salary" type="int"/>
+		</joined-subclass>
+		<joined-subclass name="org.techmentro.training.hibernate.pojo.Student" table = "students">
+			<!-- In case field name @ class and database-table is not same use attribute column -->
+			<key column="personId"/>
+			<property name = "course"/>
+			<property name = "fee" type="int"/>
+		</joined-subclass>
+	</class>
+</hibernate-mapping>

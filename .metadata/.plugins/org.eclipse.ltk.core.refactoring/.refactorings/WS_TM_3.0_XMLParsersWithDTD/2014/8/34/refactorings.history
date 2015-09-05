@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;WS_TM_3.0_XMLParsersWithDTD/src/emp1.dtd&apos; to &apos;emp.dtd&apos;" description="Rename resource &apos;emp1.dtd&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/emp1.dtd" name="emp.dtd" stamp="1408806311010" updateReferences="true"/>
+</session>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="org.techmentro.training.hibernate.pojo.Emp">
+		<id name = "id" type="int">
+			<generator class="identity"/>
+		</id>
+		<property name="name"/>	
+		<property name="job"/>	
+		<property name="salary" type="int"/>
+		<set name="previliges" table="emp_previlige" cascade="all" inverse="false">
+			<key column="empId" not-null="true"/>
+			<many-to-many class="org.techmentro.training.hibernate.pojo.Previlige" 
+					column="previligeId" /> 
+		</set>	
+	</class>
+	<class name="org.techmentro.training.hibernate.pojo.Previlige" table="previliges">
+		<id name = "id" type="int">
+			<generator class="identity"/>
+		</id>
+		<property name="name"/>	
+		<property name="annualCost" column="cost" type="int"/>	
+		<set name="employees" table="emp_previlige" inverse="true">
+			<key column="previligeId" not-null="true"/>
+			<many-to-many class="org.techmentro.training.hibernate.pojo.Emp" 
+					column="empId" />  
+		</set>
+	</class>
+</hibernate-mapping>

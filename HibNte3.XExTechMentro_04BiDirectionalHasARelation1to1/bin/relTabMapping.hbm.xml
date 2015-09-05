@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="org.techmentro.training.hibernate.pojo.HeadOfState" table="hos">
+		<id name = "id" type="int">
+			<generator class="identity"/>
+		</id>
+		<property name="title"/>
+		<property name="name"/>		
+		<join table = "country_hos_rel_table" inverse="true">	
+			<key column="hosId"/>
+			<many-to-one name="country" 
+				class="org.techmentro.training.hibernate.pojo.Country" 
+				unique="true" column="countryId"/>
+		</join>
+	</class>
+	<class name="org.techmentro.training.hibernate.pojo.Country" table="Country">
+		<id name = "id" type="int">
+			<generator class="increment" />
+		</id>
+		<property name="name"/>	
+		<join table = "country_hos_rel_table">	
+			<key column="countryId"/>
+			<many-to-one name="hos" 
+				class="org.techmentro.training.hibernate.pojo.HeadOfState" 
+				unique="true" cascade="all" column="hosId"/>
+		</join>
+	</class>
+</hibernate-mapping>

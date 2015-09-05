@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<modules>
+  <module moduleId="org.eclipse.jst.jee.server:Struts2.XTechMentro_3.0IntegratedAllExInterceptorUse" serverId="Tomcat v6.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:Struts2.XExTechMentro_1AdderFormEx" serverId="Tomcat v6.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:Struts2.XTechMentro_3.0ArchitectureAnalysis_IntegratedAllEx_InterceptorUse" serverId="Tomcat v6.0 Server at localhost"/>
+</modules>

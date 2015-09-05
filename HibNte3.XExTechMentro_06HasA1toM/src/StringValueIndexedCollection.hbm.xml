@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="org.techmentro.training.hibernate.pojo.Course" table="coursemaster">
+		<id name = "id" type="int">
+			<generator class="identity"/>
+		</id>
+		<property name="name"/>	
+		<property name="fee" type="int"/>		
+		<list name="topics" table = "topicmaster" cascade = "all">
+			<key column ="courseId"/>
+			<index column = "topicIndex"/>
+			<element column="topic" type="java.lang.String"/>
+		</list>
+	</class>
+</hibernate-mapping>

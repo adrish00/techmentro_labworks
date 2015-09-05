@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename Java project &apos;Hibernate3.XExampleLabTechMentro_1&apos; to &apos;Hibernate3.XExampleLabTechMentro_1WithMySql&apos;&#x0D;&#x0A;- Original element: &apos;Hibernate3.XExampleLabTechMentro_1&apos;&#x0D;&#x0A;- Renamed element: &apos;Hibernate3.XExampleLabTechMentro_1&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename Java project &apos;Hibernate3.XExampleLabTechMentro_1&apos;" flags="7" id="org.eclipse.jdt.ui.rename.java.project" input="=Hibernate3.XExampleLabTechMentro_1" name="Hibernate3.XExampleLabTechMentro_1WithMySql" references="true" stamp="1404563922082" version="1.0"/>
+</session>

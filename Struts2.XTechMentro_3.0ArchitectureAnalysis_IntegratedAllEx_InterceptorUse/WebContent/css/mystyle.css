@@ -1,0 +1,40 @@
+hr {color: sienna;}
+p {margin-left: 20px;}
+/* unvisited link */
+a:link {
+    color: #FF0000;
+    font-size: 15px;
+}
+
+/* visited link */
+a:visited {
+    color: #00FF00;
+    font-size: 15px;
+}
+
+/* mouse over link */
+a:hover {
+	background-color:red;
+    color: #FF00FF;
+    font-size: 20px;
+}
+
+/* selected link */
+a:active {
+	font-size: 15px;
+    color: #0000FF;
+}
+hr{
+	color: blue;
+	height: 5px;
+}
+body {
+	
+	background-image: url("../images/background.gif");
+	background-repeat: no-repeat;
+	background-position:center; 
+	background-attachment: scroll;
+	background-color: black; 
+	color: White;
+	font-size: 15px;
+	}

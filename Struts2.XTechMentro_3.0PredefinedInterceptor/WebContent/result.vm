@@ -1,0 +1,7 @@
+<b>
+	Message is : ${message} </br>
+	Action status is: ${status} </br>
+</b>
+<hr>
+This result is generated in velocity
+<jsp:include page="index.jsp"/>

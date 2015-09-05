@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC 
+	"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+	"http://struts.apache.org/dtds/struts-2.0.dtd">
+	
+<struts>
+	<package name="first" extends="struts-default" >
+		<result-types>
+			<!-- <result-type name="dispatcher" class="org.apache.struts2.dispatcher.ServletDispatcherResult" default="true" /> -->
+			<!-- default="true" -->
+			<result-type name="techmentro_result" class="org.techmentro.training.struts2x.arch.TechMentroResult"/>
+			<result-type name="velocity" class="org.apache.struts2.dispatcher.VelocityResult"/>
+		</result-types>
+		<interceptors>
+			<interceptor name="ps" class="org.techmentro.training.struts2x.arch.TechMentroInterceptor"/>
+			<interceptor name="params" class="com.opensymphony.xwork2.interceptor.ParametersInterceptor"/>
+			 <interceptor name="execAndWait" class="org.apache.struts2.interceptor.ExecuteAndWaitInterceptor"/>
+		</interceptors>
+		<!-- <default-interceptor-ref name="ps"></default-interceptor-ref> -->
+		<!-- required config when result & interceptor are not default -->
+		<global-results>
+			<result name="error">/handler.jsp</result>
+		</global-results>
+		<global-exception-mappings>
+			<exception-mapping result="error" exception="Exception"/>
+		</global-exception-mappings>
+		<action name="simple" class="org.techmentro.training.struts2x.action.SimpleAction">
+			<result name="success" type="techmentro_result">/result.jsp</result><!-- type="dispatcher" -->
+		</action>
+		<action name="simple1" class="org.techmentro.training.struts2x.action.SimpleAction1">
+			<result name="success" type="velocity" >/result.vm</result><!-- type="dispatcher" -->
+		</action>
+		<action name="divide" class="org.techmentro.training.struts2x.action.DivideAction">
+			<!-- <exception-mapping result="error" exception="ArithmeticException"></exception-mapping>
+			<result name="error">/handler.jsp</result> -->
+			<result name="success">/divResult.jsp</result><!-- type="dispatcher" -->
+		</action>
+		<action name="lazy" class="org.techmentro.training.struts2x.action.SlowAction">
+			<interceptor-ref name="params"/>
+			<interceptor-ref name="execAndWait"/>			
+			<result name="success">/slowResult.jsp</result>
+			<result name="wait">/feedback.jsp</result> 
+		</action>
+		<action name="register" class="org.techmentro.training.struts2x.action.RegisterAction">
+			<result name="success">/userHome.jsp</result>
+			<result name="input">/register.jsp</result>
+		</action>
+		<action name="logout" class="org.techmentro.training.struts2x.action.LogoutAction">
+			<result name="success">/loggedout.jsp</result>
+		</action>
+		<action name="login" class="org.techmentro.training.struts2x.action.LoginAction">
+			<result name="success">/userHome.jsp</result>
+			<result name="failure">/relogin.jsp</result>
+			<result name="input">/login.jsp</result>
+		</action>
+		<action name="users" class="org.techmentro.training.struts2x.action.UserAction">
+			<result name="success">/displayUserList.jsp</result>
+		</action>
+	</package>
+</struts>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="org.techmentro.training.hibernate.pojo.Project" table="projects">
+		<id name = "id" type="int">
+			<generator class="increment"/>
+		</id>
+		<property name="name"/>	
+		<property name="teamSize"/>	
+	</class>
+	<class name="org.techmentro.training.hibernate.pojo.ProjectManager" table="projectmanager">
+		<id name = "id" type="int">
+			<generator class="increment"/>
+		</id>
+		<property name="name"/>	
+		<map name="projects" table="pm_projects" cascade="save-update">
+			<key column="pmId" />
+			<index column = "client" type="java.lang.String"/>
+			<many-to-many class="org.techmentro.training.hibernate.pojo.Project" column="projectId"/>
+		</map>
+	</class>
+</hibernate-mapping>

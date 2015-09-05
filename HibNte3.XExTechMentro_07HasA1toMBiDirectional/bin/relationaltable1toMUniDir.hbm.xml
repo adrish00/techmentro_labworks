@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="org.techmentro.training.hibernate.pojo.Batch" table="batchmaster">
+		<id name = "id" type="int">
+			<generator class="identity"/>
+		</id>
+		<property name="slot"/>	
+		<property name="topic"/>	
+	</class>
+	<class name="org.techmentro.training.hibernate.pojo.Trainer" table="trainers">
+		<id name = "id" type="int">
+			<generator class="increment"/>
+		</id>
+		<property name="name"/>	
+		<set name="batches" table="trainer_batch" cascade="save-update">
+			<key column="trainerId" />
+			<many-to-many class="org.techmentro.training.hibernate.pojo.Batch" 
+					column="batchId" unique="true"/> <!-- unique =true given as we are using m2m as 1toM -->
+		</set>
+	</class>
+</hibernate-mapping>

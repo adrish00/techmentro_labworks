@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE books SYSTEM "src/books.dtd" >
+<books>
+<book>
+<name>Spring &amp; Hibernate</name>
+<writer>S. Satish</writer>
+<rating>&r1;</rating>
+</book>
+<book>
+<name>&quot;Struts 2 &quot;</name>
+<writer>Raman Singh</writer>
+<rating>&r2;</rating>
+</book>
+</books>

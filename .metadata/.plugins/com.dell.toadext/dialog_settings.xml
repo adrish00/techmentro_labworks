@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="com.dell.toadext.schemabrowser.actions.DisplayDescribeObjectEditorAction">
+		<item value="true" key="active"/>
+	</section>
+	<section name="com.dell.toadext.schemabrowser.actions.LinkWithEditorAction">
+		<item value="true" key="active"/>
+	</section>
+	<section name="com.dell.toadext.oracle.nui.editor.OraSqlEditorExtension">
+		<section name="editorWeights">
+			<item value="1" key="rsWeight"/>
+			<item value="1" key="editorWeight"/>
+		</section>
+	</section>
+	<section name="com.dell.toadext.plsqlviewer.pldoc.QuickDocView$LinkWithSelectionAction">
+		<item value="true" key="active"/>
+	</section>
+	<section name="com.dell.toadext.ui.dependencies.DependenciesView$ShowUsedByAction">
+		<item value="false" key="active"/>
+	</section>
+	<section name="com.dell.toadext.connection.monitor.AbstractConnectionMonitorView$LockAction">
+		<item value="false" key="active"/>
+	</section>
+	<section name="com.dell.toadext.ui.dependencies.DependenciesView$ShowUsesAction">
+		<item value="true" key="active"/>
+	</section>
+	<section name="com.dell.toadext.connection.view.handlers.GroupByDbHandler">
+		<item value="true" key="active"/>
+	</section>
+	<section name="com.dell.toadext.editor.SqlEditorExtension$HideResultSetAction">
+		<item value="false" key="active"/>
+	</section>
+	<section name="com.dell.toadext.editor.outline.SqlOutlinePage$HideAnonymousBlocksAction">
+		<item value="false" key="active"/>
+	</section>
+	<section name="com.dell.toadext.editor.outline.SqlOutlinePage$ShowParameterListAction">
+		<item value="false" key="active"/>
+	</section>
+	<section name="com.dell.toadext.javaeditor.extensions.ShowJavaFilesAction">
+		<item value="false" key="active"/>
+	</section>
+	<section name="com.dell.toadext.editor.outline.SqlOutlinePage$HideVariablesAction">
+		<item value="false" key="active"/>
+	</section>
+	<section name="com.dell.toadext.ui.dependencies.actions.ShowEditorsAction">
+		<item value="false" key="active"/>
+	</section>
+	<section name="com.dell.toadext.oracle.nui.editor.OraObjectDetailEditorExtension">
+		<section name="saveToFile">
+		</section>
+	</section>
+	<section name="com.dell.toadext.connection.monitor.DbmsOutputView">
+		<section name="saveToFile">
+		</section>
+	</section>
+	<section name="com.dell.toadext.editor.SqlEditorExtension$RightAlignResultSet">
+		<item value="false" key="active"/>
+	</section>
+	<section name="com.dell.toadext.editor.SqlEditorExtension$BottomAlignResultSet">
+		<item value="false" key="active"/>
+	</section>
+	<section name="com.dell.toadext.editor.outline.SqlOutlinePage$SortByNameAction">
+		<item value="false" key="active"/>
+	</section>
+	<section name="com.dell.toadext.sessions.actions.HideInactiveSessionsAction">
+		<item value="false" key="active"/>
+	</section>
+	<section name="com.dell.toadext.connection.monitor.AbstractConnectionMonitorView$EnableAction">
+		<item value="false" key="active"/>
+	</section>
+</section>

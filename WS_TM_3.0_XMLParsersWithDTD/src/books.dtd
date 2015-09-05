@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ENTITY r1 "It is recomended for basic users">
+<!ENTITY r2 "It is recomended for advanced users">
+<!ELEMENT books (book)*>
+<!ELEMENT book (name,writer,rating)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT writer (#PCDATA)>
+<!ELEMENT rating (#PCDATA)>

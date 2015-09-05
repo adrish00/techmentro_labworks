@@ -1,0 +1,19 @@
+<persistence targetNamespace="http://java.sun.com/xml/ns/persistence"
+            xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            xmlns:persistence="http://java.sun.com/xml/ns/persistence"
+            elementFormDefault="qualified"
+            attributeFormDefault="unqualified"
+            version="1.0">
+<persistence-unit name="basic">
+	<properties>
+		<property name="hibernate.connection.driver.class" value="com.mysql.jdbc.Driver"/>
+		<property name = "hibernate.connection.url" value="jdbc:mysql://127.0.0.1:3306/techmentro_1_mapping"/>
+		<property name = "hibernate.connection.username" value="root"/>
+		<property name = "hibernate.connection.password" value="admin123"/>
+		<property name = "hibernate.dialect" value="org.hibernate.dialect.MySQL5Dialect"/>
+		<property name = "hibernate.show_sql" value="true"/>	
+		<property name = "hibernate.logging.level" value="finest" />  
+		<property name = "hibernate.logging.timestamp" value="true"></property>	
+	</properties>
+</persistence-unit>            
+</persistence>

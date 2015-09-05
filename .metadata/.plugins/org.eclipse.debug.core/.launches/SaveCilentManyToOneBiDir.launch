@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/HibNte3.XExTechMentro_7HasA1toMBiDirectional/src/org/techmentro/training/hibernate/SaveCilentManyToOneBiDir.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="org.techmentro.training.hibernate.SaveCilentManyToOneBiDir"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="HibNte3.XExTechMentro_7HasA1toMBiDirectional"/>
+</launchConfiguration>

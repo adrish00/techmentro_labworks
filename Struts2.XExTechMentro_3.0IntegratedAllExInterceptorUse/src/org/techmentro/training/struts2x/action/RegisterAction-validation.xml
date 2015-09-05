@@ -1,0 +1,35 @@
+<!DOCTYPE validators PUBLIC 
+  		"-//OpenSymphony Group//XWork Validator 1.0.2//EN" 
+  		"http://www.opensymphony.com/xwork/xwork-validator-1.0.2.dtd">
+  		
+ <validators>
+ 	<field name="user.name">
+ 		<field-validator type="requiredstring">
+ 			<message>name can't be empty</message>
+ 		</field-validator>
+ 		<field-validator type="regex">
+ 			<param name="expression">[a-z,A-Z, ]*</param>
+ 			<message>Only alphabets and space allowed</message>
+ 		</field-validator>
+ 	</field>
+ 	<field name="user.mailId">
+ 		<field-validator type="requiredstring">
+ 			<!-- <message>mailid can't be empty</message> -->
+ 			<message key="user.mailId.required"/>
+ 		</field-validator>
+ 		<field-validator type="email">
+ 			<message>Invalid email id</message>
+ 		</field-validator>
+ 	</field>
+ 	<field name="user.password">
+ 		<field-validator type="requiredstring">
+ 			<message key="user.password.required"/>
+ 			<!-- <message>password can't be empty</message> -->
+ 		</field-validator>
+ 		<field-validator type="stringlength">
+ 			<param name="minLength">4</param>
+ 			<param name="maxLength">10</param>
+ 			<message>password must be between 4-10</message>
+ 		</field-validator>
+ 	</field>
+ </validators>

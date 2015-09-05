@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE emp SYSTEM "src/emp.dtd" >
+<emp>
+  <employee name="Adrish" dept="IT" job="SSE" salary="50000"/>
+</emp>

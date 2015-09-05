@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT employees (emp+)>
+<!ELEMENT emp EMPTY>
+<!ATTLIST 	emp
+	name CDATA #REQUIRED
+	job (DM|TM|PM|PL|TL|SSE|SE|STrainee) "STrainee"
+	salary CDATA #IMPLIED
+	dept CDATA #FIXED "IT"
+>
+	

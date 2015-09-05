@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE employees SYSTEM "emp1.dtd" >
+<employees>
+  <emp dept="IT" job="STrainee" name="Amar" salary="00000"/>
+  <emp name="Ashok" dept="IT" job="SSE" salary="300000"/>
+</employees>

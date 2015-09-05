@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;applicationContext.xml&apos; to &apos;WEB-INF&apos;&#x0D;&#x0A;- Original project: &apos;Spring3EXTM_14.00_AOP_PointCutAdvisorDemo&apos;&#x0D;&#x0A;- Destination element: &apos;WEB-INF&apos;&#x0D;&#x0A;- Original element: &apos;applicationContext.xml&apos;" description="Copy file" element1="src/applicationContext.xml" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1409490440484" target="/Spring3EXTM_15.00_WebMVC_HelloWorld/WebContent/WEB-INF" units="0" version="1.0"/>
+</session>

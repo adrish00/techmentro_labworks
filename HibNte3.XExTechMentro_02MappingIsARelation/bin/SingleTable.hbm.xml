@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="org.techmentro.training.hibernate.pojo.Person" table="persons" discriminator-value="1">
+	<!-- In case the database table name and POJO name not same use attribute table to map DB-Table -->
+		<id name = "id" type="int">
+			<generator class="increment"/>
+		</id>
+		<discriminator column = "personType" type="int"/>
+		<property name = "name"/> 
+		<subclass name="org.techmentro.training.hibernate.pojo.Emp" discriminator-value="2">
+		<!-- In case field name @ class and database-table is not same use attribute column -->
+		<property name = "job"/>
+		<property name = "salary" type="int"/>
+		</subclass>
+		<subclass name="org.techmentro.training.hibernate.pojo.Student" discriminator-value="3">
+		<!-- In case field name @ class and database-table is not same use attribute column -->
+		<property name = "course"/>
+		<property name = "fee" type="int"/>
+		</subclass>
+	</class>
+</hibernate-mapping>

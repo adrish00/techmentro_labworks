@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-1.5">
+		<attributes>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="lib" path="G:/TechMentro_Training/Neeraj jars/s2jars/commons-logging-1.0.4.jar"/>
+	<classpathentry kind="lib" path="G:/TechMentro_Training/Neeraj jars/s2jars/freemarker-2.3.8.jar"/>
+	<classpathentry kind="lib" path="G:/TechMentro_Training/Neeraj jars/s2jars/ognl-2.6.11.jar"/>
+	<classpathentry kind="lib" path="G:/TechMentro_Training/Neeraj jars/s2jars/struts2-core-2.0.11.jar"/>
+	<classpathentry kind="lib" path="G:/TechMentro_Training/Neeraj jars/s2jars/xwork-2.0.4.jar"/>
+	<classpathentry kind="lib" path="C:/ProgrammerFiles/apache-tomcat-7.0.42/lib/jsp-api.jar"/>
+	<classpathentry kind="lib" path="C:/ProgrammerFiles/apache-tomcat-7.0.42/lib/servlet-api.jar"/>
+	<classpathentry kind="lib" path="G:/TechMentro_Training/Neeraj jars/s2jars/velocity/commons-beanutils-1.7.0.jar"/>
+	<classpathentry kind="lib" path="G:/TechMentro_Training/Neeraj jars/s2jars/velocity/commons-collections-3.2.jar"/>
+	<classpathentry kind="lib" path="G:/TechMentro_Training/Neeraj jars/s2jars/velocity/commons-digester-1.8.jar"/>
+	<classpathentry kind="lib" path="G:/TechMentro_Training/Neeraj jars/s2jars/velocity/velocity-1.7-dep.jar"/>
+	<classpathentry kind="lib" path="G:/TechMentro_Training/Neeraj jars/s2jars/velocity/velocity-tools-2.0.jar"/>
+	<classpathentry kind="lib" path="C:/ProgrammerFiles/apache-tomcat-7.0.42/lib/el-api.jar"/>
+	<classpathentry kind="lib" path="C:/ProgrammerFiles/apache-tomcat-7.0.42/lib/jasper-el.jar"/>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>

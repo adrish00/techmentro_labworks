@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;MyFactory.java&apos; to &apos;Spring3EXTM_11.00_AOP_BasicDemo/src/com.techmentro.training.spring.aopdemo&apos;&#x0D;&#x0A;- Original project: &apos;Spring3ExTM_06.00_IOC_DITest&apos;&#x0D;&#x0A;- Destination element: &apos;Spring3EXTM_11.00_AOP_BasicDemo/src/com.techmentro.training.spring.aopdemo&apos;&#x0D;&#x0A;- Original element: &apos;org.techmentro.training.spring.util.MyFactory.java&apos;" description="Copy compilation unit" destination="=Spring3EXTM_11.00_AOP_BasicDemo/src&lt;com.techmentro.training.spring.aopdemo" element1="/src&lt;org.techmentro.training.spring.util{MyFactory.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1409153650704" units="1" version="1.0"/>
+</session>

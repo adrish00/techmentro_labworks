@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="org.techmentro.training.hibernate.Emp">
+	<!-- In case the database table name and POJO name not same use attribute table to map DB-Table -->
+		<id name = "id" type="int">
+			<generator class="increment"/>
+		</id>
+		<property name = "name"/> 
+		<!-- In case field name @ class and database-table is not same use attribute column -->
+		<property name = "job"/>
+		<property name = "salary" type="int"/>
+	</class>
+</hibernate-mapping>
